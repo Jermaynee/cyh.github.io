@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  font-family: "Segoe UI", "Microsoft YaHei", sans-serif;
+  color: #fff;
+}
+
+.container {
+  text-align: center;
+  padding: 2rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.05em;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.image-wrapper {
+  display: inline-block;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-wrapper:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.6);
+}
+
+.main-image {
+  display: block;
+  max-width: 90vw;
+  max-height: 80vh;
+  object-fit: contain;
+}
